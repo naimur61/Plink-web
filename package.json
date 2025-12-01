@@ -1,0 +1,20 @@
+{
+  "name": "Plink-web",
+  "version": "1.0.0",
+  "description": "This is fun Game",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^7.0.1",
+    "moment": "^2.30.1",
+    "random": "^4.1.0",
+    "simple-git": "^3.27.0"
+  }
+}
