@@ -1,4 +1,4 @@
-import { writeFile } from "jsonfile";
+import jsonfile from "jsonfile";
 import moment from "moment";
 import simpleGit from "simple-git";
 import random from "random";
@@ -49,7 +49,7 @@ async function main() {
       .second(random.int(0, 59));
 
     // Make commit
-    await writeFile("./data.json", { date: date.format() });
+    await jsonfile.writeFile("./data.json", { date: date.format() });
     await git.add(["./data.json"]);
     await git.commit(msgs[random.int(0, msgs.length - 1)], {
       "--date": date.format(),
